@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 import math
-import copy
 
 
 def merge(arr, l, m, r):
@@ -151,8 +150,8 @@ for num in range(num_min,num_max):
             ar = Randomgen(i + 1)
             arr.append(ar)
 
-
-    tt_1 = timSort(arr,2,epochs)
+    # note: k value here can manually change.
+    tt_1 = timSort(arr,16,epochs)
     t_1.append(tt_1)
     tt_2 = mergeSortt(arr,epochs)
     t_2.append(tt_2)
@@ -164,7 +163,6 @@ plt.legend()
 plt.xlabel("Input size (N)")
 plt.ylabel("Scaled Running Time of Algorithm (seconds)")
 plt.show()
-
 
 
 #References:
