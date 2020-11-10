@@ -117,8 +117,6 @@ def Randomgen(num):
     return arr
 
 
-
-
 epochs  = 100
 t_1 = []
 t_2 = []
