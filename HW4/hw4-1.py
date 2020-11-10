@@ -136,8 +136,8 @@ for num in range(num_min,num_max):
     t_2.append(tt_2)
 
 
-plt.plot(range(num_min, num_max), t_1, c='r', label='mergesort')
-plt.plot(range(num_min, num_max), t_2, c='b', label='insertionsort')
+plt.plot(range(num_min, num_max), t_1, c='r', label='insertionsort'')
+plt.plot(range(num_min, num_max), t_2, c='b', label='mergesort)
 plt.legend()
 plt.xlabel("Input size (N)")
 plt.ylabel("Scaled Running Time of Algorithm (seconds)")
